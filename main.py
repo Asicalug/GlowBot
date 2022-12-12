@@ -4,7 +4,7 @@ from nextcord.ui import Select, View
 from nextcord import Interaction, components, SlashOption, ChannelType
 from nextcord.abc import GuildChannel
 from itertools import cycle
- 
+import secrets 
  
  
 #pip install -U git+https://github.com/Rapptz/nextcord.py
@@ -512,4 +512,4 @@ async def embed(interaction : Interaction, title=None, description=None):
 #-----------------------------------------------
 #===================run bot=====================
 #-----------------------------------------------
-client.run('OTY2Nzk0NTg2NDM1NTE4NTE0.YmG7nw.7UtfOF7I1tI1M8eps3yLw9r6-3g')
+client.run(secrets.bot_TOKEN)
